@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<button id="clear">CLEAR LOCAL STORAGE</button>
+<button id="get-request">GET</button>
+<button id="post-request">POST</button>
+<button id="put-request">PUT</button>
+<button id="delete-request">DELETE</button>
+
+
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
